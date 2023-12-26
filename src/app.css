@@ -59,3 +59,23 @@ html, body {
     margin: 0;
   }
   
+  .intro {
+    margin-top: 20px;
+    text-align:left;
+  }
+
+  .Hobbies {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .hobby-highlight {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(178, 152, 115);
+  }
+
+  .Extracurricular {
+    margin-top: 10px;
+    text-align: left;
+  }
