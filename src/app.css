@@ -1,0 +1,61 @@
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    background: rgb(255, 244, 226) ; /* This makes sure the background color is applied universally */
+  }
+  
+  
+  #root {
+    min-height: 100vh; /* Use viewport height to ensure it covers the screen height */
+    background: rgb(255, 244, 226); /* Inherit the background color */
+  }
+  
+
+  .App {
+    position: relative;
+    /* transform: translateY(-50%); This line is removed */
+    width: 500px;
+    margin: 0 auto; /* Horizontally center the App container */
+    background: rgb(255, 244, 226);
+  }
+  
+  .content-container {
+    /* If you're still using flex here, make sure it's for a good reason */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(255, 244, 226);
+  }
+  
+  .nav-container {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    background: rgb(255, 244, 226);
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+  }
+  
+  .right-container {
+    padding: 10px;
+    text-align: center;
+    margin-top: 80px; /* Adjust this value if necessary */
+    background: rgb(255, 244, 226);
+  }
+  
+  /* Make sure the p elements in the nav-container have some margin or padding for spacing */
+  .nav-container p {
+    margin-right: 20px; /* Or whatever spacing you prefer */
+    display: inline-block; 
+    
+    background: rgb(255, 244, 226);
+  }
+  
+  p {
+    margin: 0;
+  }
+  
