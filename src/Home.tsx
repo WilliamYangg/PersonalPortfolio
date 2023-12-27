@@ -8,6 +8,7 @@ const hobbies = [
   "go outside for 🚶‍♂️walks🚶‍♂️ along my neighbourhood",
   "go all in when i have 7, 2 in 🃏poker🃏",
   "watch my girlfriend 🧶crochet🧶 something cute",
+  "scroll on instagram reels for an hour before 💤sleeping💤",
 ];
 
 const extraCurricular = [
@@ -52,7 +53,22 @@ const Home = () => {
           {extraCurricular[currentExtraCurricularIndex]}
         </span>
       </div>
-      {/* Add more content and images */}
+      <div className="more-facts">
+        Here are some fun facts about me if you haven't gotten bored yet
+        <li>I completed grade 8 piano at 13</li>
+        <li>My favourite anime is Demon Slayer</li>
+        <li>
+          I played french horn in one of auckland's best secondary school
+          orchestras and best concert band (Both won Gold for 3 years
+          consecutively)
+        </li>
+        <li>I can solve the rubix cube in 2 minutes!</li>
+        <li>I used to be part of a competitive rifle shooting club</li>
+        <li>I sang in Auckland's best boys choir for 4 years</li>
+        <li>I am currently hardstuck champ1 in Rocket league</li>
+        <li>I aspire to hit gold nova in counter strike one day</li>
+        <li>The concept of gambling fascinates me hence my proudest project</li>
+      </div>
     </div>
   );
 };
