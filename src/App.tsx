@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Home from "./Home component/Home";
-import About from "./About";
-import Projects from "./Projects";
+import About from "./About component/About";
+import Projects from "./Projects component/Projects";
 import Journal from "./Journal";
 import Contact from "./Contact";
 import "./Home component/Home.css";
+import "./About component/About.css";
 import "./App.css";
 
 const App = () => {
