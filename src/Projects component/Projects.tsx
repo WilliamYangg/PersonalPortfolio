@@ -18,6 +18,25 @@ const Projects = () => {
           against them.
         </div>
       </div>
+      <div className="project-container">
+        <div className="project-picture">
+          <img src="./Placeholder.png" alt="William's Profile" />
+        </div>
+        <div className="project-title">My Portfolio - Summer 2023</div>
+        <div className="project-language">Typescript, React, Vite, CSS</div>
+        <div className="project-description">Just my portfolio lol</div>
+      </div>
+      <div className="project-container">
+        <div className="project-picture">
+          <img src="./Placeholder.png" alt="William's Profile" />
+        </div>
+        <div className="project-title">UNSW Course Review - Aug 2023</div>
+        <div className="project-language">HTML, CSS</div>
+        <div className="project-description">
+          A project that rates Computer science courses at UNSW, aimed to help
+          students prepare and manage their expectations for the courses.
+        </div>
+      </div>
     </div>
   );
 };
