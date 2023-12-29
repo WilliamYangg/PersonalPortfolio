@@ -1,40 +1,36 @@
 
 .about-container {
-    max-width: 800px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add some padding */
-  }
-  
-  .profile-section {
-    margin-top:10px;
-    display: flex; /* Use flexbox to align items side by side */
-    align-items: flex-start; /* Align items to the start of the cross axis */
-    gap: 20px; /* Add space between the image and the text */
-  }
-  
-  
-  .profile-text {
-    flex: 1; /* Take up remaining space */
-    text-align: left;
-  }
+  max-width: 800px;
+  margin: 0 auto; 
+  padding: 20px;
+}
 
+.profile-section {
+  margin-top:10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
 
-  .More-waffle {
-    margin-top:15px;
-    text-align:left;
-  }
+.profile-text {
+  flex: 1; 
+  text-align: left;
+}
 
-  
-  .picture img {
-    max-height: 300px; /* Maximum height of the image */
-    max-width: 100%;  /* Maximum width of the image */
-    display: block;   /* Display block to remove bottom space */
-    text-align: left;
-    object-fit: cover; /* This will cover the area without stretching the image */
-  }
+.More-waffle {
+  margin-top:15px;
+  text-align:left;
+}
 
+.picture img {
+  max-height: 300px;
+  max-width: 100%; 
+  display: block; 
+  text-align: left;
+  object-fit: cover;
+}
 
-  .pic-intro {
-    text-align: left;
-    margin-top: 30px;
-  }
+.pic-intro {
+  text-align: left;
+  margin-top: 30px;
+}
