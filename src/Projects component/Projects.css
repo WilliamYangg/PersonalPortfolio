@@ -1,0 +1,35 @@
+.projects-intro {
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    width:100%;
+}
+
+.project-title {
+    font-size: 30px;
+    color: #2f298a;
+    text-align: left; 
+
+    font-family: 'Arial', sans-serif;
+}
+
+.project-picture img{
+    width:100%;
+}
+
+.project-language {
+    font-size: 20px;
+    color: #000000;
+    text-align: left; 
+    margin-top:-10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.project-description {
+    text-align:left;
+    font-size:15px;
+    font-family: 'Arial', sans-serif;
+}

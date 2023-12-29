@@ -6,6 +6,7 @@ import Journal from "./Journal";
 import Contact from "./Contact";
 import "./Home component/Home.css";
 import "./About component/About.css";
+import "./Projects component/Projects.css";
 import "./App.css";
 
 const App = () => {
