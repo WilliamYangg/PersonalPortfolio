@@ -1,0 +1,20 @@
+.Life-summary {
+    margin-bottom: 20px;
+}
+
+.months {
+    font-size:20px;
+    font-weight: bold;
+}
+
+.years {
+    margin-bottom:10px;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.listing{
+    text-align: left;
+    margin-left:65px;
+    margin-bottom: 25px;
+}
