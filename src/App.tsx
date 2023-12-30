@@ -7,7 +7,7 @@ import Contact from "./Contact component/Contact";
 import "./Home component/Home.css";
 import "./About component/About.css";
 import "./Projects component/Projects.css";
-import "./App.css";
+import "./app.css";
 
 const App = () => {
   // State to manage the current active section
