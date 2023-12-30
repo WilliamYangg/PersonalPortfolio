@@ -7,7 +7,7 @@ const Projects = () => {
       <div className="projects-intro">Take a look at my projects below!</div>
       <div className="project-container">
         <div className="project-picture">
-          <img src="./Placeholder.png" alt="William's Profile" />
+          <img src="./Placeholder.png" alt="RISKIT Screenshot" />
         </div>
         <div className="project-title">RISKIT - Summer 2023</div>
         <div className="project-language">React, Typescript, CSS, Vite</div>
@@ -20,7 +20,7 @@ const Projects = () => {
       </div>
       <div className="project-container">
         <div className="project-picture">
-          <img src="./Placeholder.png" alt="William's Profile" />
+          <img src="./PersonalPortfolio.png" alt="Personal Portfolio" />
         </div>
         <div className="project-title">My Portfolio - Summer 2023</div>
         <div className="project-language">
@@ -30,7 +30,7 @@ const Projects = () => {
       </div>
       <div className="project-container">
         <div className="project-picture">
-          <img src="./Placeholder.png" alt="William's Profile" />
+          <img src="./CourseReview.png" alt="Course Review Screenshot" />
         </div>
         <div className="project-title">UNSW Course Review - Aug 2023</div>
         <div className="project-language">HTML, CSS</div>
