@@ -23,7 +23,9 @@ const Projects = () => {
           <img src="./Placeholder.png" alt="William's Profile" />
         </div>
         <div className="project-title">My Portfolio - Summer 2023</div>
-        <div className="project-language">Typescript, React, Vite, CSS</div>
+        <div className="project-language">
+          Typescript, React, Vite, CSS, Web3Forms
+        </div>
         <div className="project-description">Just my portfolio lol</div>
       </div>
       <div className="project-container">
