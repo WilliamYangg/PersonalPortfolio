@@ -1,4 +1,5 @@
 // About.tsx
+import "./Projects.css";
 
 const Projects = () => {
   return (
@@ -19,20 +20,28 @@ const Projects = () => {
         </div>
       </div>
       <div className="project-container">
-        <div className="project-picture">
-          <img src="./PersonalPortfolio.png" alt="Personal Portfolio" />
-        </div>
-        <div className="project-title">My Portfolio - Summer 2023</div>
+        <a href="https://williamyang.netlify.app/" rel="noopener noreferrer">
+          <div className="project-picture">
+            <img src="./PersonalPortfolio.png" alt="Personal Portfolio" />
+          </div>
+          <div className="project-title">My Portfolio - Summer 2023</div>
+        </a>
         <div className="project-language">
           Typescript, React, Vite, CSS, Web3Forms
         </div>
         <div className="project-description">Just my portfolio lol</div>
       </div>
       <div className="project-container">
-        <div className="project-picture">
-          <img src="./CourseReview.png" alt="Course Review Screenshot" />
-        </div>
-        <div className="project-title">UNSW Course Review - Aug 2023</div>
+        <a
+          href="https://unswcomputersciencecoursereview.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="project-picture">
+            <img src="./CourseReview.png" alt="Course Review Screenshot" />
+          </div>
+          <div className="project-title">UNSW Course Review - Aug 2023</div>
+        </a>
         <div className="project-language">HTML, CSS</div>
         <div className="project-description">
           A project that rates Computer science courses at UNSW, aimed to help
