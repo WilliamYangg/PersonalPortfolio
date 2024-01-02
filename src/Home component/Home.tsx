@@ -1,5 +1,7 @@
 // Home.tsx
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const hobbies = [
   "go to the gym🏋️",
@@ -68,6 +70,30 @@ const Home = () => {
         <li>I am currently hardstuck champ1 in Rocket league</li>
         <li>I aspire to hit gold nova in counter strike one day</li>
         <li>The concept of gambling fascinates me hence my proudest project</li>
+      </div>
+      <div className="social-links">
+        <a
+          href="https://www.linkedin.com/in/william-yang-a28092250/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            size="2x"
+            style={{ color: "black" }}
+          />
+        </a>
+        <a
+          href="https://github.com/Yangstaboi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            size="2x"
+            style={{ color: "black" }}
+          />
+        </a>
       </div>
     </div>
   );
