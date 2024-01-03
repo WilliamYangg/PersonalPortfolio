@@ -33,6 +33,25 @@ const Projects = () => {
       </div>
       <div className="project-container">
         <a
+          href="https://wouldyouratherwilliamyang.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="project-picture">
+            <img src="./Wouldyourather.png" alt="Would you rather screenshot" />
+          </div>
+          <div className="project-title">Would You Rather - Dec 2023</div>
+        </a>
+        <div className="project-language">
+          Next.js, Firebase (Realtime Database), CSS
+        </div>
+        <div className="project-description">
+          A website which is a would you rather game where users can see how
+          their choices compare to other people's choices.
+        </div>
+      </div>
+      <div className="project-container">
+        <a
           href="https://unswcomputersciencecoursereview.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
