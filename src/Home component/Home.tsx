@@ -43,6 +43,18 @@ const Home = () => {
         Australia. I'm 18 years old and heavily passionate about programming and
         the online world and I love building stuff!
       </div>
+      <div className="intro">
+        Hello! My name is William, and I'm currently studying CS at UNSW,
+        Australia. I'm 18 years old and heavily passionate about programming and
+        the online world and I love building stuff!
+      </div>
+      <div className="intro">
+        I'm currently employed by UNSW as a{" "}
+        <span className="dsa-highlight">
+          🕹️ Data structures and Algorithms lab assistant! 🕹️
+        </span>
+      </div>
+
       <div className="Hobbies">
         When I have free time I like to{" "}
         <span onClick={changeHobby} className="hobby-highlight">
