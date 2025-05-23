@@ -7,17 +7,15 @@ const Projects = () => {
       <h1>Projects</h1>
       <div className="projects-intro">Take a look at my projects below!</div>
       <div className="project-container">
-        <a href="https://riskit.vercel.app/" rel="noopener noreferrer">
+        <a href="https://github.com/jacksonwanggg/aceverse" rel="noopener noreferrer">
           <div className="project-picture">
-            <img src="./Placeholder.png" alt="RISKIT Screenshot" />
+            <img src="./aceversebanner.png" alt="Aceverse Screenshot" />
           </div>
-          <div className="project-title">RISKIT - Summer 2023</div>
+          <div className="project-title">AceVerse - Backend Developer</div>
         </a>
         <div className="project-description">
-          RISKIT is a gambling website which contains many minigames played with
-          fake money, the purpose of this website was to challenge players to
-          see if they could make a profit against the house when the odds are
-          against them.
+          (Coming Soon!) - AceVerse is a social media platform aimed at gamers
+          to share their gaming acheivements!
         </div>
       </div>
       <div className="project-container">
@@ -48,7 +46,9 @@ const Projects = () => {
         </div>
         <div className="project-description">
           A website which is a would you rather game where users can see how
-          their choices compare to other people's choices.
+          their choices compare to other people's choices. (Database got taken down,
+          so percentages won't be shown unfortunately)
+
         </div>
       </div>
       <div className="project-container">

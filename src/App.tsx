@@ -4,6 +4,7 @@ import About from "./About component/About";
 import Projects from "./Projects component/Projects";
 import Journal from "./Journal component/Journal";
 import Contact from "./Contact component/Contact";
+import Experience from "./Experience component/Experience";
 import "./Home component/Home.css";
 import "./About component/About.css";
 import "./Projects component/Projects.css";
@@ -20,6 +21,8 @@ const App = () => {
         return <Home />;
       case "About":
         return <About />;
+      case "Experience":
+        return <Experience />;
       case "Projects":
         return <Projects />;
       case "Journal":
@@ -42,22 +45,16 @@ const App = () => {
           Home
         </p>
         <p
-          onClick={() => setActiveSection("About")}
+          onClick={() => setActiveSection("Experience")}
           style={{ cursor: "pointer" }}
         >
-          About
+          Experience
         </p>
         <p
           onClick={() => setActiveSection("Projects")}
           style={{ cursor: "pointer" }}
         >
           Projects
-        </p>
-        <p
-          onClick={() => setActiveSection("Journal")}
-          style={{ cursor: "pointer" }}
-        >
-          Journal
         </p>
         <p
           onClick={() => setActiveSection("Contact")}

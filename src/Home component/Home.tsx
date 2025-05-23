@@ -1,111 +1,83 @@
-// Home.tsx
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const hobbies = [
-  "go to the gym🏋️",
-  "watch mr beast on youtube📺",
-  "play 🔫counter strike🔫",
-  "go outside for 🚶‍♂️walks🚶‍♂️ along my neighbourhood",
-  "go all in when i have 7, 2 in 🃏poker🃏",
-  "watch my girlfriend 🧶crochet🧶 something cute",
-  "scroll on instagram reels for an hour before 💤sleeping💤",
-];
-
 const extraCurricular = [
-  "Director of Media📹 at Digital Society✨",
+  "Vice President Operations at UNSW Digital Society 💻",
+  "Marketing Director🎨 at UNSW Development Society",
+  "Media Director🤖 at UNSW Digital Society",
   "Peer mentoring at Computer science💻 Society✨",
   "Marketing Subcommittee at ♛UNSW Chess Club♛",
 ];
 
 const Home = () => {
-  const [currentHobbyIndex, setCurrentHobbyIndex] = useState(0);
-  const [currentExtraCurricularIndex, setCurrentExtraCurricularIndex] =
-    useState(0);
-
-  const changeHobby = () => {
-    const nextIndex = (currentHobbyIndex + 1) % hobbies.length;
-    setCurrentHobbyIndex(nextIndex);
-  };
-
-  const changeExtraCurricular = () => {
-    const nextIndex =
-      (currentExtraCurricularIndex + 1) % extraCurricular.length;
-    setCurrentExtraCurricularIndex(nextIndex);
-  };
-
+  const [currentExtraCurricularIndex, setCurrentExtraCurricularIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); // Start fade-out
+  
+      // After fade-out completes (0.5s), change text and fade in
+      setTimeout(() => {
+        setCurrentExtraCurricularIndex(prev => (prev + 1) % extraCurricular.length);
+        setFade(true); // Fade back in
+      }, 500);
+    }, 3000);
+  
+    return () => clearInterval(interval);
+  }, []);
+  
   return (
     <div>
-      <h1>Discover William's Haven!</h1>
-      <div className="intro">
-        Hello! My name is William, and I'm currently studying CS at UNSW,
-        Australia. I'm 18 years old and heavily passionate about programming and
-        the online world and I love building stuff!
-      </div>
-      <div className="intro">
-        Hello! My name is William, and I'm currently studying CS at UNSW,
-        Australia. I'm 18 years old and heavily passionate about programming and
-        the online world and I love building stuff!
-      </div>
-      <div className="intro">
-        I'm currently employed by UNSW as a{" "}
-        <span className="dsa-highlight">
-          🕹️ Data structures and Algorithms lab assistant! 🕹️
-        </span>
-      </div>
+      <div className="main-container">
+        <h1>Discover William's Haven!</h1>
+        <div className="intro">
+          Hello! My name is William, and I'm currently studying CS at UNSW,
+          Australia. I'm 20 years old and heavily passionate about programming and
+          the online world and I love building stuff!
+        </div>
+        <div className="Extracurricular">
+          Some Extracurriculars I'm involved in at UNSW include{" "}
+          <span className={`hobby-highlight fade-text ${fade ? '' : 'hidden'}`}>
+            {extraCurricular[currentExtraCurricularIndex]}
+          </span>
+        </div>
 
-      <div className="Hobbies">
-        When I have free time I like to{" "}
-        <span onClick={changeHobby} className="hobby-highlight">
-          {hobbies[currentHobbyIndex]}
-        </span>
-      </div>
-      <div className="Extracurricular">
-        Some Extracurriculars I'm involved in at UNSW include{" "}
-        <span onClick={changeExtraCurricular} className="hobby-highlight">
-          {extraCurricular[currentExtraCurricularIndex]}
-        </span>
-      </div>
-      <div className="more-facts">
-        Here are some fun facts about me if you haven't gotten bored yet
-        <li>I completed grade 8 piano at 13</li>
-        <li>My favourite anime is Demon Slayer</li>
-        <li>
-          I played french horn in one of auckland's best secondary school
-          orchestras and best concert band (Both won Gold for 3 years
-          consecutively)
-        </li>
-        <li>I can solve the rubix cube in 2 minutes!</li>
-        <li>I used to be part of a competitive rifle shooting club</li>
-        <li>I sang in Auckland's best boys choir for 4 years</li>
-        <li>I am currently hardstuck champ1 in Rocket league</li>
-        <li>I aspire to hit gold nova in counter strike one day</li>
-        <li>The concept of gambling fascinates me hence my proudest project</li>
-      </div>
-      <div className="social-links">
-        <a
-          href="https://www.linkedin.com/in/william-yang-a28092250/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            size="2x"
-            style={{ color: "black" }}
-          />
-        </a>
-        <a
-          href="https://github.com/Yangstaboi"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            size="2x"
-            style={{ color: "black" }}
-          />
-        </a>
+
+        <div className="picture-box">
+          <img src="/Pictureofme.JPG" alt="William's Profile" className="profile-pic" />
+          {/* Left side words */}
+          <div className="floating-word word-left-1">Poker</div>
+          <div className="floating-word word-left-2">Board Games</div>
+          <div className="floating-word word-left-3">Python</div>
+          <div className="floating-word word-left-4">UNSW</div>
+          <div className="floating-word word-left-5">Gym</div>
+
+          {/* Right side words */}
+          <div className="floating-word word-right-1">Anime</div>
+          <div className="floating-word word-right-2">Stocks</div>
+          <div className="floating-word word-right-3">Brawl Stars</div>
+          <div className="floating-word word-right-4">LOL</div>
+          <div className="floating-word word-right-5">Malatang</div>
+        </div>
+
+        <div className="social-links">
+          <a
+            href="https://www.linkedin.com/in/william-yang-a28092250/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" style={{ color: "black" }} />
+          </a>
+          <a
+            href="https://github.com/WilliamYangg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: "black" }} />
+          </a>
+        </div>
       </div>
     </div>
   );

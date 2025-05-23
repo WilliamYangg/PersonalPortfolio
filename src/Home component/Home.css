@@ -25,7 +25,7 @@
 }
 
 .social-links {
-    margin-top:10px;
+    margin-top:100px;
     text-align: left;
 }
 
@@ -35,5 +35,90 @@
 
 .dsa-highlight {
     color: green; 
+  }
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro,
+.Hobbies,
+.Extracurricular,
+.more-facts,
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.picture img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fade-text {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-text.hidden {
+    opacity: 0;
+  }
+
+  .picture-box {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 40px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* Shared */
+.floating-word {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+    animation: floatAround 6s infinite ease-in-out;
+    white-space: nowrap;
+  }
+  
+  /* Left side */
+  .word-left-1 { top: 10%; left: -90px; animation-delay: 4s; }
+  .word-left-2 { top: 25%; left: -70px; animation-delay: 0.5s; }
+  .word-left-3 { top: 40%; left: -110px; animation-delay: 1s; }
+  .word-left-4 { top: 55%; left: -70px; animation-delay: 1.5s; }
+  .word-left-5 { top: 70%; left: -45px; animation-delay: 10s; }
+  
+  /* Right side */
+  .word-right-1 { top: 10%; right: -30px; animation-delay: 2.5s; }
+  .word-right-2 { top: 25%; right: -95px; animation-delay: 5s; }
+  .word-right-3 { top: 40%; right: -60px; animation-delay: 3.5s; }
+  .word-right-4 { top: 55%; right: -25px; animation-delay: 6s; }
+  .word-right-5 { top: 70%; right: -105px; animation-delay: 4.5s; }
+  
+  /* Animation */
+  @keyframes floatAround {
+    0%   { transform: translateY(0); opacity: 0.8; }
+    50%  { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.8; }
   }
   
