@@ -6,6 +6,19 @@ const Experience = () => {
     <div>
     <h1>Experience</h1>
       <div className="project-container">
+        <a href="https://www.commbank.com.au/" rel="noopener noreferrer">
+          <div className="project-picture">
+            <img src="./commbanklogo.jpg" alt="CommBank" />
+          </div>
+          <div className="project-title">Technology Engineering Intern</div>
+        </a>
+        <div className="project-description">
+          Built features for the Organisation Repository platform used by risk executives to assess global 
+          credit exposure and improve lending decisions. Delivered the Light-Weight Credit Risk experience 
+          in React & TypeScript, reducing credit report review time by up to 70%.
+        </div>
+      </div>
+      <div className="project-container">
         <a href="https://dappa.fashion/" rel="noopener noreferrer">
           <div className="project-picture">
             <img src="./dappabanner.webp" alt="DAPPA Screenshot" />

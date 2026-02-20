@@ -34,7 +34,7 @@ const Home = () => {
         <h1>Discover William's Haven!</h1>
         <div className="intro">
           Hello! My name is William, and I'm currently studying CS at UNSW,
-          Australia. I'm 20 years old and heavily passionate about programming and
+          Australia. I'm 21 years old and heavily passionate about programming and
           the online world and I love building stuff!
         </div>
         <div className="Extracurricular">
